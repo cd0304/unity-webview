@@ -131,6 +131,10 @@ public class CWebViewPlugin {
             WebSettings webSettings = webView.getSettings();
             webSettings.setSupportZoom(false);
             webSettings.setJavaScriptEnabled(true);
+            //yuan add 20160815
+            webSettings.setUseWideViewPort(true);
+            webSettings.setLoadWithOverviewMode(true);
+            
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
                 // Log.i("CWebViewPlugin", "Build.VERSION.SDK_INT = " + Build.VERSION.SDK_INT);
                 webSettings.setAllowUniversalAccessFromFileURLs(true);
